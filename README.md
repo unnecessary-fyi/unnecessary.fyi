@@ -279,7 +279,5 @@ this page: restaurants rated ≥3 based on aggregate score by at least 2 raters
     <td>pineapple and pearls</td>
     <td>modern/contemporary</td>
   </tr>
-</tbody>
-</table>
 <p>
 Raters: <a href="www.instagram.com/zacheadams">@zacheadams</a>     <a href="www.instagram.com/progressivepixie">@progressivepixie</a>     <a href="www.instagram.com/ywel_">@ywel_</a>
