@@ -2,7 +2,7 @@ this page: restaurants rated ≥3 based on aggregate score by at least 2 raters
 <br>
 <a href="https://docs.google.com/spreadsheets/d/1ppRCtwky1qtUGSNIne_OGmf0mqLjegcnBZs7u1Y9sSI/edit?usp=sharing">here</a>: all restaurants and full scoring details
 <br>
-raters: <a href="www.instagram.com/zacheadams">@zacheadams</a>     <a href="www.instagram.com/progressivepixie">@progressivepixie</a>     <a href="www.instagram.com/ywel_">@ywel_</a>
+raters: <a href="https://www.instagram.com/zacheadams">@zacheadams</a>     <a href="https://www.instagram.com/progressivepixie">@progressivepixie</a>     <a href="https://www.instagram.com/ywel_">@ywel_</a>
 <p>
 <table>
 <thead>
