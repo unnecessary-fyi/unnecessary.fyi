@@ -31,8 +31,6 @@ for line in table:
     focus = focus.lower()
     score = float(score)
 
-    print(line)
-
     # update data in output
     output_middle = output_middle + "\n\t\t<tr>"
     output_middle = output_middle + "\n\t\t\t<td>" + str(score) + "</td>"
