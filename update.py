@@ -4,7 +4,6 @@ from googleapiclient.discovery import build
 GOOGLE_API_KEY = open('credentials/google_api_key.txt').read()
 SPREADSHEET_ID = "1ppRCtwky1qtUGSNIne_OGmf0mqLjegcnBZs7u1Y9sSI"
 RANGE = 'Ratings!A2:E'
-ROWS_TO_GEN = 42
 
 
 # pull in data
@@ -15,6 +14,8 @@ result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range= RANGE).execute(
 
 table = sorted(result['values'],  key=lambda x: x[4], reverse=True) # sort by 4th element which is score
 
+table = [value for value in table if float(value[4]) >= 4.0]
+
 # update html
 current_index = open('index.html').read()
 
@@ -22,13 +23,15 @@ output_front = current_index[0:current_index.index("</tr>\n")]
 output_middle = ""
 output_end = current_index[current_index.index("</table>"):]
 
-for line in table[:ROWS_TO_GEN]:
+for line in table:
     # unpack the data
 
     restaurant_name, focus, drink_focus, diet, score = line
     restaurant_name = restaurant_name.lower()
     focus = focus.lower()
     score = float(score)
+
+    print(line)
 
     # update data in output
     output_middle = output_middle + "\n\t\t<tr>"
